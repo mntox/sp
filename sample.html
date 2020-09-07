@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Speedtest</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/style.css" rel="stylesheet">
+		<script src="speedtest.js"></script>		
+	</head>
+	<body>
+		<h1> Velocímetro MSNET </h1>
+
+		<div id="startStopBtn" onclick="startStop()"></div>		
+
+		<div id="test">
+			<div class="testGroup">
+				<div class="testArea">
+					<div class="testName">Download</div>
+					<canvas id="dlMeter" class="meter"></canvas>
+					<div id="dlText" class="meterText"></div>
+					<div class="unit"><font size="1">Mbps</font></div>
+				</div>
+				<div class="testArea">
+					<div class="testName">Upload</div>
+					<canvas id="ulMeter" class="meter"></canvas>
+					<div id="ulText" class="meterText"></div>
+					<div class="unit"><font size="1">Mbps</font></div>
+				</div>
+			</div>
+			<div class="testGroup">
+				<div class="testArea">
+					<div class="testName">Ping</div>
+					<canvas id="pingMeter" class="meter"></canvas>
+					<div id="pingText" class="meterText"></div>
+					<div class="unit"><font size="1">ms</font></div>
+				</div>
+				<div class="testArea">
+					<div class="testName">Jitter</div>
+					<canvas id="jitMeter" class="meter"></canvas>
+					<div id="jitText" class="meterText"></div>
+					<div class="unit"><font size="1">ms</font></div>
+				</div>
+			</div>
+
+			<div id="ipArea">
+				<div><font size="1"><span id="ip"></span></font></div> 
+			</div>
+		</div>
+
+		<footer id="footer">
+			<p class="copyright">
+				<font size="1">2019-2020 &copy; MSNET Telecom</font>
+			</p>
+		</footer>		
+
+		<script type="text/javascript">setTimeout(initUI,100);</script>	
+	</body>
+</html>
